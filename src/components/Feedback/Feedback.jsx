@@ -5,7 +5,7 @@ import { Section } from '../Section/Section';
 import { FeedbackOptions } from '../FeedbackOptions/FeedebackOptions';
 import { Statistics } from '../Statistics/Statistics';
 import { Notification } from '../Notification/Notification';
-import { FeedbackContainer } from './Feedback.styled';
+import { FeedbackContainer, FeedbackList } from './Feedback.styled';
 
 // export class Feedback extends Component {
 export const Feedback = () => {
@@ -48,10 +48,12 @@ export const Feedback = () => {
   return (
     <FeedbackContainer>
       <Section title="Please leave feedback">
-        <FeedbackOptions
-          options={['good', 'neutral', 'bad']}
-          increment={counter}
-        />
+        <FeedbackList>
+          <FeedbackOptions
+            options={['good', 'neutral', 'bad']}
+            increment={counter}
+          />
+        </FeedbackList>
       </Section>
 
       <Section title="Statistics">

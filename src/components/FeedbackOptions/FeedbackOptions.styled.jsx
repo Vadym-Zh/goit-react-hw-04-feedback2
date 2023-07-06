@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 
-export const FeedbackList = styled.ul`
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  margin-bottom: 30px;
-`;
+// export const FeedbackList = styled.ul`
+//   display: flex;
+//   gap: 50px;
+//   justify-content: center;
+//   margin-bottom: 30px;
+// `;
 
 export const FeedbackItem = styled.li`
   display: flex;
